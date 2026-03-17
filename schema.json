@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "required": ["leads"],
+  "properties": {
+    "leads": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "company", "contact", "deal"],
+        "properties": {
+          "name": {"type": "string"},
+          "company": {"type": "string"},
+          "contact": {
+            "type": "object",
+            "properties": {
+              "email": {"type": ["string", "null"]}
+            }
+          },
+          "deal": {
+            "type": "object",
+            "properties": {
+              "value": {"type": "number"},
+              "discount_requested": {"type": "number"},
+              "approval_required": {"type": "boolean"}
+            }
+          },
+          "errors": {
+            "type": "array"
+          },
+          "warnings": {
+            "type": "array"
+          }
+        }
+      }
+    }
+  }
+}
