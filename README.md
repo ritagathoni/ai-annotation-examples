@@ -6,6 +6,30 @@ All examples in this repository are synthetic and anonymized.
 
 ---
 
+## Annotation Workflow
+
+This repository illustrates a typical structured data annotation pipeline used in AI training and evaluation.
+
+sample_input.txt  
+Raw semi-structured records that require annotation.
+
+↓ Apply annotation guidelines from annotation_rules.md
+
+sample_output.json  
+Structured JSON generated from the input data.
+
+↓ Validate structure and required fields
+
+schema.json  
+Schema used to ensure correct JSON format and field constraints.
+
+↓ Perform quality assurance checks
+
+qa_notes.md  
+Documentation of QA checks, error tagging, and review outcomes.
+
+---
+
 ## Skills Demonstrated
 
 This portfolio shows experience with:
