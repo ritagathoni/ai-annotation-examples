@@ -1,0 +1,15 @@
+Lead 1:
+Name: Sarah Chen
+Company: BrightWave Tech
+Email: sarah@brightwave.com
+Discount requested: 25%
+Deal value: $12000
+Urgent: Yes
+
+Lead 2:
+Name: David Lopez
+Company: Horizon Retail
+Email: missing
+Discount requested: 10%
+Deal value: $4500
+Urgent: No
