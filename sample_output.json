@@ -1,0 +1,38 @@
+{
+  "leads": [
+    {
+      "name": "Sarah Chen",
+      "company": "BrightWave Tech",
+      "contact": {
+        "email": "sarah@brightwave.com"
+      },
+      "deal": {
+        "value": 12000,
+        "discount_requested": 25,
+        "approval_required": true
+      },
+      "meta": {
+        "priority": "urgent"
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "name": "David Lopez",
+      "company": "Horizon Retail",
+      "contact": {
+        "email": null
+      },
+      "deal": {
+        "value": 4500,
+        "discount_requested": 10,
+        "approval_required": false
+      },
+      "meta": {
+        "priority": "normal"
+      },
+      "errors": ["E_MISSING_EMAIL"],
+      "warnings": []
+    }
+  ]
+}
