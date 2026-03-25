@@ -1,0 +1,36 @@
+{
+  "vendor": "Brightway Supplies Ltd",
+  "invoice_number": "INV-2026-014",
+  "invoice_date": "2026-03-20",
+  "currency": "USD",
+  "paid": false,
+  "line_items": [
+    {
+      "description": "Office Chairs",
+      "quantity": 2,
+      "unit_price": 150,
+      "line_total": 300
+    },
+    {
+      "description": "Office Desks",
+      "quantity": 1,
+      "unit_price": 300,
+      "line_total": 300
+    },
+    {
+      "description": "Delivery Fee",
+      "quantity": 1,
+      "unit_price": 50,
+      "line_total": 50
+    }
+  ],
+  "subtotal": 650,
+  "tax": 104,
+  "grand_total": 754,
+  "validation_checks": {
+    "subtotal_matches_line_items": true,
+    "grand_total_matches_subtotal_plus_tax": true
+  },
+  "errors": [],
+  "warnings": []
+}
