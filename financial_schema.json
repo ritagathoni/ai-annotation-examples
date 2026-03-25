@@ -1,0 +1,89 @@
+{
+  "type": "object",
+  "required": [
+    "vendor",
+    "invoice_number",
+    "invoice_date",
+    "currency",
+    "paid",
+    "line_items",
+    "subtotal",
+    "tax",
+    "grand_total"
+  ],
+  "properties": {
+    "vendor": {
+      "type": "string",
+      "description": "Supplier or vendor name"
+    },
+    "invoice_number": {
+      "type": "string",
+      "description": "Unique invoice reference"
+    },
+    "invoice_date": {
+      "type": "string",
+      "description": "Invoice issue date in YYYY-MM-DD format"
+    },
+    "currency": {
+      "type": "string",
+      "enum": ["USD", "KES", "EUR", "GBP"]
+    },
+    "paid": {
+      "type": "boolean",
+      "description": "Payment status"
+    },
+    "line_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["description", "quantity", "unit_price", "line_total"],
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "unit_price": {
+            "type": "number",
+            "minimum": 0
+          },
+          "line_total": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "subtotal": {
+      "type": "number",
+      "minimum": 0
+    },
+    "tax": {
+      "type": "number",
+      "minimum": 0
+    },
+    "grand_total": {
+      "type": "number",
+      "minimum": 0
+    },
+    "validation_checks": {
+      "type": "object",
+      "properties": {
+        "subtotal_matches_line_items": {
+          "type": "boolean"
+        },
+        "grand_total_matches_subtotal_plus_tax": {
+          "type": "boolean"
+        }
+      }
+    },
+    "errors": {
+      "type": "array"
+    },
+    "warnings": {
+      "type": "array"
+    }
+  }
+}
