@@ -33,6 +33,40 @@
       },
       "errors": ["E_MISSING_EMAIL"],
       "warnings": []
+    },
+    {
+      "name": "Amina Hassan",
+      "company": "Nile Ventures",
+      "contact": {
+        "email": "amina@nileventures"
+      },
+      "deal": {
+        "value": 8000,
+        "discount_requested": 5,
+        "approval_required": false
+      },
+      "meta": {
+        "priority": "urgent"
+      },
+      "errors": ["E_INVALID_EMAIL_FORMAT"],
+      "warnings": ["W_BOOLEAN_NORMALIZED"]
+    },
+    {
+      "name": "John Smith",
+      "company": "Apex Solutions",
+      "contact": {
+        "email": "john@apex.com"
+      },
+      "deal": {
+        "value": 7500,
+        "discount_requested": null,
+        "approval_required": false
+      },
+      "meta": {
+        "priority": "normal"
+      },
+      "errors": ["E_INVALID_DISCOUNT_FORMAT"],
+      "warnings": ["W_CURRENCY_NORMALIZED"]
     }
   ]
 }
