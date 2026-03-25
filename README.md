@@ -1,6 +1,6 @@
 # AI Annotation Examples
 
-This repository demonstrates structured JSON data annotation and validation workflows used in AI and data labeling projects.
+This repository demonstrates structured data modeling, JSON schema design, and validation workflows used to transform unstructured inputs into reliable, schema-compliant data.
 
 All examples in this repository are synthetic and anonymized.
 
@@ -8,7 +8,7 @@ All examples in this repository are synthetic and anonymized.
 
 ## Annotation Workflow
 
-This repository illustrates a typical structured data annotation pipeline used in AI training and evaluation.
+This repository illustrates a structured data extraction and modeling pipeline, where semi-structured or document-style inputs are transformed into validated, schema-compliant JSON outputs.
 
 sample_input.txt  
 Raw semi-structured records that require annotation.
@@ -26,7 +26,7 @@ Schema used to ensure correct JSON format and field constraints.
 ↓ Perform quality assurance checks
 
 qa_notes.md  
-Documentation of QA checks, error tagging, and review outcomes.
+Documentation of QA checks, error tagging, and validation outcomes.
 
 ---
 
@@ -34,13 +34,27 @@ Documentation of QA checks, error tagging, and review outcomes.
 
 This portfolio shows experience with:
 
-- Converting messy text into structured JSON
-- JSON schema validation
-- Nested JSON objects and arrays
-- Handling missing data
-- Error tagging and warning systems
-- Business rule enforcement
-- Annotation quality assurance
+- Converting messy text into structured JSON  
+- JSON schema design and field structuring  
+- Data modeling from unstructured and semi-structured inputs  
+- Nested JSON objects and arrays  
+- Handling missing data  
+- Field-level validation (types, required fields, conditional logic)  
+- Business rule enforcement  
+- Totals reconciliation and logical consistency checks  
+- Annotation quality assurance  
+
+---
+
+## Data Modeling & Schema Design
+
+This repository includes examples of designing structured JSON schemas from raw inputs, including:
+
+- Defining field names, types, and required vs optional fields  
+- Designing nested structures and repeated entities (arrays)  
+- Applying field-level validation logic (type enforcement, null handling)  
+- Modeling relationships between entities and ensuring consistency  
+- Structuring outputs for downstream system integration and API use  
 
 ---
 
@@ -61,6 +75,15 @@ Guidelines used during the annotation process.
 qa_notes.md  
 Quality assurance checks used during review.
 
+financial_sample_input.txt  
+Raw invoice-style input representing financial document extraction.
+
+financial_sample_output.json  
+Structured JSON output with nested line items and validation flags.
+
+financial_schema.json  
+Schema defining financial fields, nested structures, and validation-ready design.
+
 ---
 
 ## Error Taxonomy
@@ -73,18 +96,32 @@ E_DUPLICATE_ENTITY
 
 Warnings:
 
-W_DEFAULT_VALUE_USED
+W_DEFAULT_VALUE_USED  
 
 ---
 
 ## Purpose
 
-These examples demonstrate the workflow used when annotating structured data for AI systems, including:
+These examples demonstrate how unstructured and document-style data can be translated into structured, schema-compliant JSON for use in AI systems, data pipelines, and backend integrations, including:
 
-- structured JSON outputs
-- schema compliance
-- business rule validation
-- quality review and verification
+- structured JSON outputs  
+- schema compliance  
+- business rule validation  
+- field-level validation and totals reconciliation for financial-style data  
+- quality review and verification  
+
+---
+
+## Validation & QA Approach
+
+The examples in this repository demonstrate a structured validation approach, including:
+
+- Schema-level validation (required fields, types, structure)  
+- Field-level validation (numeric constraints, boolean checks)  
+- Logical validation (totals reconciliation and consistency checks)  
+- Error and warning classification for data quality issues  
+
+This ensures that structured outputs are reliable, consistent, and ready for downstream processing.
 
 ---
 
