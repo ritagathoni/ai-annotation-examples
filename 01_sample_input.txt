@@ -13,3 +13,19 @@ Email: missing
 Discount requested: 10%
 Deal value: $4500
 Urgent: No
+
+Lead 3:
+Name: Amina Hassan
+Company: Nile Ventures
+Email: amina@nileventures
+Discount requested: 5
+Deal value: 8000
+Urgent: TRUE
+
+Lead 4:
+Name: John Smith
+Company: Apex Solutions
+Email: john@apex.com
+Discount requested: twenty percent
+Deal value: $7,500
+Urgent: No
