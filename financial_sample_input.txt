@@ -1,0 +1,16 @@
+Invoice Summary
+
+Vendor: Brightway Supplies Ltd
+Invoice Number: INV-2026-014
+Invoice Date: 2026-03-20
+
+Line Items:
+1. Office Chairs - Quantity: 2 - Unit Price: 150
+2. Office Desks - Quantity: 1 - Unit Price: 300
+3. Delivery Fee - Quantity: 1 - Unit Price: 50
+
+Subtotal: 650
+Tax: 104
+Grand Total: 754
+Currency: USD
+Paid: No
